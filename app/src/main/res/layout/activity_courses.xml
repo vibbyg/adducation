@@ -41,6 +41,7 @@
         tools:layout_editor_absoluteY="533dp" />
 
     <ScrollView
+        android:id="@+id/scrollCourses"
         android:layout_width="416dp"
         android:layout_height="628dp"
         android:layout_marginBottom="104dp"

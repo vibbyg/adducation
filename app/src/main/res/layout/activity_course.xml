@@ -41,16 +41,16 @@
         tools:layout_editor_absoluteY="189dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="56dp"
-        android:layout_height="51dp"
+        android:id="@+id/addAssignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:clickable="true"
         app:srcCompat="@android:drawable/ic_input_add"
         tools:layout_editor_absoluteX="286dp"
         tools:layout_editor_absoluteY="189dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+        android:id="@+id/deleteAssignment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -59,6 +59,7 @@
         tools:layout_editor_absoluteY="188dp" />
 
     <ScrollView
+        android:id="@+id/scrollAssignments"
         android:layout_width="409dp"
         android:layout_height="485dp"
         android:layout_marginBottom="244dp"

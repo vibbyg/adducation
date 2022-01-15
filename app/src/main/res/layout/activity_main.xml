@@ -21,8 +21,9 @@
         android:id="@+id/term1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
         android:text="Term 1"
-        tools:layout_editor_absoluteX="154dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="188dp" />
 
     <Button
@@ -36,7 +37,7 @@
     <Button
         android:id="@+id/addTerm"
         android:layout_width="63dp"
-        android:layout_height="36dp"
+        android:layout_height="48dp"
         android:text="Add Term"
         tools:layout_editor_absoluteX="174dp"
         tools:layout_editor_absoluteY="347dp" />
