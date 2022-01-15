@@ -4,48 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.Courses">
+    tools:context=".activities.Grades">
 
     <EditText
-        android:id="@+id/termName"
+        android:id="@+id/courseNameGrade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Year, Term"
+        android:hint="Course Name +"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <Button
+        android:id="@+id/back3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:layout_editor_absoluteX="327dp"
         tools:layout_editor_absoluteY="16dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Courses"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="61dp" />
-
-    <Button
-        android:id="@+id/addCourse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Course"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="465dp" />
-
-    <Button
-        android:id="@+id/deleteCourse"
-        android:layout_width="129dp"
-        android:layout_height="59dp"
-        android:text="Delete Course"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="533dp" />
-
     <ScrollView
-        android:layout_width="416dp"
-        android:layout_height="628dp"
-        android:layout_marginBottom="104dp"
+        android:layout_width="409dp"
+        android:layout_height="610dp"
+        android:layout_marginBottom="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="-3dp">
+        tools:layout_editor_absoluteX="1dp">
 
         <LinearLayout
             android:layout_width="match_parent"

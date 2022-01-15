@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Adducation">
         <activity
+            android:name=".activities.Grades"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Assignment"
+            android:exported="false" />
+        <activity
             android:name=".activities.Course"
             android:exported="false" />
         <activity
