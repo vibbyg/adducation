@@ -9,10 +9,35 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="ADDucation"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
 
+    <Button
+        android:id="@+id/term1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Term 1"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <Button
+        android:id="@+id/term2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Term 2"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <Button
+        android:id="@+id/addTerm"
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:text="Add Term"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="347dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
