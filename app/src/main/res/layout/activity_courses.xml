@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".activities.Courses">
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview"  />
+
     <EditText
         android:id="@+id/termName"
         android:layout_width="wrap_content"
