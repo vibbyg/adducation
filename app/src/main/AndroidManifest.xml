@@ -15,13 +15,13 @@
         <activity
             android:name=".activities.Assignment"
             android:exported="false" />
-        <activity
-            android:name=".activities.Course"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".activities.Course"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".activities.Courses"
             android:exported="false" />
-        <activity android:name=".activities.MainActivity">
+        <activity android:name=".activities.Course">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

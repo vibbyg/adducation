@@ -76,11 +76,13 @@
         android:clickable="true"
         app:layout_constraintBottom_toTopOf="@+id/scrollAssignments"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toEndOf="@+id/courseName"
         app:layout_constraintTop_toBottomOf="@+id/gradesButton"
-        app:layout_constraintVertical_bias="0.776"
+        app:layout_constraintVertical_bias="0.848"
         app:srcCompat="@android:drawable/ic_menu_delete" />
 
-    <ScrollView
+    <ListView
         android:id="@+id/scrollAssignments"
         android:layout_width="320dp"
         android:layout_height="429dp"
@@ -93,5 +95,5 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" />
-    </ScrollView>
+    </ListView>
 </androidx.constraintlayout.widget.ConstraintLayout>
