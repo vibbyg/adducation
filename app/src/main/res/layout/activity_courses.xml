@@ -10,60 +10,51 @@
         android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="81dp" />
 
     <EditText
         android:id="@+id/termName"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="-700dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Year, Term"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="parent" />
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="-400dp"
-        android:layout_marginTop="-640dp"
         android:text="Courses"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="parent" />
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="61dp" />
 
     <Button
         android:id="@+id/addCourse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-250dp"
-        android:layout_marginEnd="-400dp"
+        android:layout_marginBottom="128dp"
         android:text="Add Course"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="265dp" />
 
     <Button
         android:id="@+id/deleteCourse"
         android:layout_width="129dp"
         android:layout_height="59dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="-400dp"
         android:text="Delete Course"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addCourse" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCourse"
+        tools:layout_editor_absoluteX="266dp" />
 
     <ScrollView
         android:id="@+id/scrollCourses"
-        android:layout_width="416dp"
-        android:layout_height="628dp"
-        android:layout_marginBottom="104dp"
-        android:contentDescription="ScrollCourses"
+        android:layout_width="410dp"
+        android:layout_height="450dp"
+        android:layout_marginBottom="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        tools:layout_editor_absoluteX="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
