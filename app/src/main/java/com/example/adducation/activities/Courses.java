@@ -15,7 +15,7 @@ import com.example.adducation.R;
 
 import java.util.*;
 
-public class Courses extends AppCompatActivity {
+public class Courses extends AppCompatActivity implements View.OnClickListener{
     private ViewGroup coursesView;
 
     @Override
@@ -30,14 +30,14 @@ public class Courses extends AppCompatActivity {
         ListView listView = findViewById(R.id.listview);
         List<String> list = new ArrayList<>();
 
-        ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1, list);
-        listView.setAdapter(arrayAdapter);
-        listView.setOnItemClickListener(new AdapterView.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                displayCourse();
-            }
-                                        });
+//        ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1, list);
+//        listView.setAdapter(arrayAdapter);
+//        listView.setOnItemClickListener(new AdapterView.OnClickListener());
+//            @Override
+//            public void onClick(View view) {
+//                displayCourse();
+//            }
+//        };
 
         addCourse.setOnClickListener(this);
         deleteCourse.setOnClickListener(this);
@@ -48,12 +48,17 @@ public class Courses extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.addCourse:
+                addButton();
                 createCourse();
                 break;
             case R.id.deleteCourse:
                 removeCourse();
                 break;
         }
+    }
+
+    private void addButton() {
+        Button course = new Button(Courses.this);
     }
 
     private void displayCourse() {
