@@ -9,19 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Adducation">
+
+
         <activity
             android:name=".activities.Grades"
             android:exported="false" />
         <activity
             android:name=".activities.Assignment"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".activities.Course"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".activities.Course"
+            android:exported="false" />
         <activity
             android:name=".activities.Courses"
             android:exported="false" />
-        <activity android:name=".activities.Course">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -24,12 +24,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button term1 = (Button) findViewById(R.id.term1);
         Button term2 = (Button) findViewById(R.id.term2);
         Button add = (Button) findViewById(R.id.addTerm);
-        Button term3 = (Button) findViewById(R.id.newButton);
+//        Button term3 = (Button) findViewById(R.id.newButton);
 
         term1.setOnClickListener(this);
         term2.setOnClickListener(this);
         add.setOnClickListener(this);
-        term3.setOnClickListener(this);
+//        term3.setOnClickListener(this);
 
 
     }
