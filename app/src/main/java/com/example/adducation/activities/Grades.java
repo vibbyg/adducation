@@ -20,17 +20,19 @@ public class Grades extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grades);
         ToggleButton edit = (ToggleButton) findViewById(R.id.editGrades);
+        edit.setChecked(true);
         Button addRow = (Button) findViewById(R.id.addRow);
 
 
         edit.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton editButton, boolean checked) {
-                if (checked) {
+                if (editButton.isChecked()) {
+                    // toggle is enabled
                     editTable();
                     addRow.setCursorVisible(true);
                 } else {
-
+                    // toggle is disabled. Do nothing
                 }
             }
         });
