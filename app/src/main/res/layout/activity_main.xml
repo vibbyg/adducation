@@ -5,23 +5,29 @@
     android:id="@+id/newButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF8F8"
+    android:background="@drawable/background"
     tools:context=".activities.MainActivity">
 
     <TextView
         android:id="@+id/appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select a Term"
+        android:shadowColor="#000000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="4"
+        android:text="ADDucation"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#0C0C0C"
+        android:textColor="#C5B2AE"
+        android:textSize="45dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.043" />
+        app:layout_constraintVertical_bias="0.141" />
 
     <Button
         android:id="@+id/term1"
@@ -30,7 +36,8 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="139dp"
         android:layout_marginEnd="160dp"
-        android:layout_marginBottom="30dp"
+        android:shadowDx="2"
+        android:shadowDy="2"
         android:text="Term 1"
         app:layout_constraintBottom_toTopOf="@+id/term2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +52,6 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="160dp"
-        android:layout_marginBottom="32dp"
         android:text="Term 2"
         app:layout_constraintBottom_toTopOf="@+id/term3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,13 +62,28 @@
         android:id="@+id/term3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="174dp"
+        android:layout_marginStart="160dp"
         android:layout_marginTop="17dp"
-        android:layout_marginEnd="174dp"
+        android:layout_marginEnd="160dp"
         android:layout_marginBottom="321dp"
         android:text="Term 3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/term2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Term:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
 </androidx.constraintlayout.widget.ConstraintLayout>

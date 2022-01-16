@@ -3,6 +3,7 @@ package com.example.adducation.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +25,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button term1 = (Button) findViewById(R.id.term1);
         Button term2 = (Button) findViewById(R.id.term2);
         Button term3 = (Button) findViewById(R.id.term3);
+
+        term1.setBackgroundColor(Color.WHITE);
+        term2.setBackgroundColor(Color.WHITE);
+        term3.setBackgroundColor(Color.WHITE);
+        term1.setTextColor(Color.BLACK);
+        term2.setTextColor(Color.BLACK);
+        term3.setTextColor(Color.BLACK);
+
 //        Button term3 = (Button) findViewById(R.id.newButton);
 
         term1.setOnClickListener(this);
