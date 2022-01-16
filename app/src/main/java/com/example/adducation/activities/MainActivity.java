@@ -23,13 +23,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button term1 = (Button) findViewById(R.id.term1);
         Button term2 = (Button) findViewById(R.id.term2);
-        Button add = (Button) findViewById(R.id.addTerm);
+        Button term3 = (Button) findViewById(R.id.term3);
 //        Button term3 = (Button) findViewById(R.id.newButton);
 
         term1.setOnClickListener(this);
         term2.setOnClickListener(this);
-        add.setOnClickListener(this);
-//        term3.setOnClickListener(this);
+//        add.setOnClickListener(this);
+        term3.setOnClickListener(this);
 
 
     }
@@ -43,13 +43,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.term2:
                 openCourses2();
                 break;
-            case R.id.addTerm:
-                addButton();
+            case R.id.term3:
+//                addButton();
                 openCourses3();
                 break;
-            case R.id.newButton:
-                openCourses3();
-                break;
+//            case R.id.newButton:
+//                openCourses3();
+//                break;
         }
     }
 
@@ -58,15 +58,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent3);
     }
 
-    private void addButton() {
-        Button term3 = new Button(MainActivity.this);
-        RelativeLayout.LayoutParams params =
-                new RelativeLayout.LayoutParams
-                        (ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        params.addRule(RelativeLayout.BELOW, R.id.term2);
-        term3.setText("TERM 3");
-        rootView.addView(term3, params);
-    }
+//    private void addButton() {
+//        Button term3 = new Button(MainActivity.this);
+//        RelativeLayout.LayoutParams params =
+//                new RelativeLayout.LayoutParams
+//                        (ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+//        params.addRule(RelativeLayout.BELOW, R.id.term2);
+//        term3.setText("TERM 3");
+//        rootView.addView(term3, params);
+//    }
 
     private void openCourses2() {
         Intent intent2 = new Intent(this, Courses.class);
