@@ -10,44 +10,71 @@
         android:id="@+id/courseName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="-20dp"
         android:ems="10"
         android:hint="Course name"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="124dp" />
+        app:layout_constraintBottom_toTopOf="@+id/addAssignment"
+        app:layout_constraintEnd_toStartOf="@+id/scrollAssignments"
+        app:layout_constraintStart_toEndOf="@id/addAssignment"
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-300dp"
+        android:layout_marginRight="750dp"
+        android:layout_marginBottom="350dp"
         android:text="Back"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/courseName"
+        app:layout_constraintStart_toEndOf="@id/gradesButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/gradesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="299dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="182dp"
         android:text="Grades"
-        tools:layout_editor_absoluteX="299dp"
-        tools:layout_editor_absoluteY="21dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollAssignments" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="200dp"
         android:text="Assignments"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="189dp" />
+        app:layout_constraintBottom_toTopOf="@+id/scrollAssignments"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/courseName"
+        app:layout_constraintTop_toBottomOf="@id/courseName" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addAssignment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="-125dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="-300dp"
         android:clickable="true"
-        app:srcCompat="@android:drawable/ic_input_add"
-        tools:layout_editor_absoluteX="286dp"
-        tools:layout_editor_absoluteY="189dp" />
+        app:layout_constraintBottom_toTopOf="@+id/scrollAssignments"
+        app:layout_constraintEnd_toStartOf="@+id/deleteAssignment"
+        app:layout_constraintStart_toEndOf="@+id/scrollAssignments"
+        app:layout_constraintTop_toBottomOf="@+id/courseName"
+        app:srcCompat="@android:drawable/ic_input_add" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/deleteAssignment"
@@ -62,9 +89,14 @@
         android:id="@+id/scrollAssignments"
         android:layout_width="409dp"
         android:layout_height="485dp"
-        android:layout_marginBottom="244dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="248dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
