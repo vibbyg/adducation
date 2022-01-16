@@ -32,10 +32,12 @@ public class Courses extends AppCompatActivity {
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1, list);
         listView.setAdapter(arrayAdapter);
-        listView.setOnItemClickListener((AdapterView.OnItemClickListener) this)) {
-            Intent intent1 = new Intent(this, Course.class);
-            startActivity(intent1);
-        }
+        listView.setOnItemClickListener(new AdapterView.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                displayCourse();
+            }
+                                        });
 
         addCourse.setOnClickListener(this);
         deleteCourse.setOnClickListener(this);
@@ -54,6 +56,10 @@ public class Courses extends AppCompatActivity {
         }
     }
 
+    private void displayCourse() {
+        Intent intent1 = new Intent(this, Course.class);
+        startActivity(intent1);
+    }
 
     private void createCourse() {
         // leads the user to a Course page where they can input the course name, assignments, etc.
