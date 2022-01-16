@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -26,6 +27,7 @@ public class Courses extends AppCompatActivity implements View.OnClickListener{
 
         Button addCourse = (Button) findViewById(R.id.addCourse);
         Button deleteCourse = (Button) findViewById(R.id.deleteCourse);
+        Button back = (Button) findViewById(R.id.back);
 
         ListView listView = findViewById(R.id.listview);
         List<String> list = new ArrayList<>();
@@ -41,6 +43,7 @@ public class Courses extends AppCompatActivity implements View.OnClickListener{
 
         addCourse.setOnClickListener(this);
         deleteCourse.setOnClickListener(this);
+        back.setOnClickListener(this);
 
     }
 
@@ -50,6 +53,9 @@ public class Courses extends AppCompatActivity implements View.OnClickListener{
             case R.id.addCourse:
                 addButton();
                 createCourse();
+                break;
+            case R.id.back:
+                goBack();
                 break;
             case R.id.deleteCourse:
                 removeCourse();
@@ -74,5 +80,10 @@ public class Courses extends AppCompatActivity implements View.OnClickListener{
 
     private void removeCourse() {
         // prompts the reader to select which course they wish to delete.
+    }
+
+    private void goBack() {
+        Intent intent2 = new Intent(this, MainActivity.class);
+        startActivity(intent2);
     }
 }
