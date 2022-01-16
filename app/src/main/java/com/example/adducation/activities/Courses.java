@@ -2,10 +2,9 @@ package com.example.adducation.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
 import android.os.Bundle;
 import android.content.Intent;
-import android.view.MenuItem;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -25,11 +24,10 @@ public class Courses extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_courses);
         coursesView = (ViewGroup) findViewById(R.id.newButton);
-//        ActionBar aB = getActionBar();
-//        aB.setDisplayHomeAsUpEnabled(true);
 
         Button addCourse = (Button) findViewById(R.id.addCourse);
         Button deleteCourse = (Button) findViewById(R.id.deleteCourse);
+        Button back = (Button) findViewById(R.id.back);
 
         ListView listView = findViewById(R.id.listview);
         List<String> list = new ArrayList<>();
@@ -45,46 +43,28 @@ public class Courses extends AppCompatActivity implements View.OnClickListener{
 
         addCourse.setOnClickListener(this);
         deleteCourse.setOnClickListener(this);
+        back.setOnClickListener(this);
 
     }
-
-//    public boolean onOptionsItemSelected(MenuItem it){
-//        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//        startActivity(intent);
-//        return true;
-//    }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.addCourse:
                 addButton();
-//                createCourse();
+                createCourse();
+                break;
+            case R.id.back:
+                goBack();
                 break;
             case R.id.deleteCourse:
                 removeCourse();
                 break;
-            case R.id.back2:
-                returnBack();
-                break;
         }
-    }
-
-    private void returnBack() {
-        Intent back = new Intent(this, MainActivity.class);
-        startActivity(back);
     }
 
     private void addButton() {
         Button course = new Button(Courses.this);
-//        RelativeLayout.LayoutParams params =
-//                new RelativeLayout.LayoutParams
-//                        (ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-//        params.addRule(RelativeLayout., R.id.textView2);
-
-        course.getEditableText();
-
-        coursesView.addView(course, RelativeLayout.BELOW, R.id.textView2);
     }
 
     private void displayCourse() {
@@ -100,5 +80,10 @@ public class Courses extends AppCompatActivity implements View.OnClickListener{
 
     private void removeCourse() {
         // prompts the reader to select which course they wish to delete.
+    }
+
+    private void goBack() {
+        Intent intent2 = new Intent(this, MainActivity.class);
+        startActivity(intent2);
     }
 }
