@@ -7,9 +7,10 @@
     tools:context=".activities.Courses">
 
     <ListView
+        android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listview"  />
+        tools:layout_editor_absoluteY="81dp" />
 
     <EditText
         android:id="@+id/termName"
@@ -33,25 +34,27 @@
         android:id="@+id/addCourse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
         android:text="Add Course"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="465dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="265dp" />
 
     <Button
         android:id="@+id/deleteCourse"
         android:layout_width="129dp"
         android:layout_height="59dp"
         android:text="Delete Course"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="533dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCourse"
+        tools:layout_editor_absoluteX="266dp" />
 
     <ScrollView
         android:id="@+id/scrollCourses"
-        android:layout_width="416dp"
-        android:layout_height="628dp"
-        android:layout_marginBottom="104dp"
+        android:layout_width="410dp"
+        android:layout_height="450dp"
+        android:layout_marginBottom="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="-3dp">
+        tools:layout_editor_absoluteX="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
