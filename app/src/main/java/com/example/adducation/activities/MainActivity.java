@@ -24,10 +24,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button term1 = (Button) findViewById(R.id.term1);
         Button term2 = (Button) findViewById(R.id.term2);
         Button add = (Button) findViewById(R.id.addTerm);
+        Button term3 = (Button) findViewById(R.id.newButton);
 
         term1.setOnClickListener(this);
         term2.setOnClickListener(this);
         add.setOnClickListener(this);
+        term3.setOnClickListener(this);
 
 
     }
@@ -43,7 +45,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.addTerm:
                 addButton();
+                openCourses3();
+                break;
+            case R.id.newButton:
+                openCourses3();
+                break;
         }
+    }
+
+    private void openCourses3() {
+        Intent intent3 = new Intent(this, Courses.class);
+        startActivity(intent3);
     }
 
     private void addButton() {
